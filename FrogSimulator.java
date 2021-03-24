@@ -10,6 +10,7 @@ package com.josephcagle.randomstuff;
 public class FrogSimulator {
 
 	public static void main(String[] args) {
+		System.out.println("Please watch the video: https://www.youtube.com/watch?v=ZLTyX4zL2Fc");
 
 		java.util.Random random = java.util.concurrent.ThreadLocalRandom.current();
 
@@ -26,7 +27,7 @@ public class FrogSimulator {
 
 		int iterations = args.length > 1 ? Integer.parseInt(args[1]) : 1_000;   // use 1000 if no cmd-line option is provided
 		System.out.println("Doing the simulation " + iterations + " times ...");
-		System.out.println("(Use `java FrogSimulator.java [pads] [num of times to simulate]` to set)");
+		System.out.println("(Use `java FrogSimulator.java [pads] [num of times to simulate]` to set different numbers)");
 
 		for (int i=0; i<iterations; i++) {   // do a bunch of simulations
 			frog_pos = 0;
